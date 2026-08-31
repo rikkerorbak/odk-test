@@ -21,8 +21,7 @@ def populate_queue(workqueue: Workqueue):
         "https://www.aljazeera.com", 
         "https://www.foxnews.com", 
         "https://www.nbcnews.com", 
-        "https://www.usatoday.com",
-        "https://www.dr.dk",
+        "https://www.usatoday.com"
     ]
 
     # Loop to create and post JSON items sequentially from the list
@@ -81,7 +80,6 @@ async def process_workqueue(workqueue: Workqueue):
 # Run the async main function
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    logging.info('RUNNING TEST BRANCH')
     
     ats = AutomationServer.from_environment()    
     
